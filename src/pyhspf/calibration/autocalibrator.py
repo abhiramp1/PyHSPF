@@ -570,5 +570,5 @@ class AutoCalibrator:
             self.adjust(model, variable, adjustment)
 
         # adjust the filename
-
+        filepath = '{}/test'.format(self.output)
         with open(output, 'wb') as f: pickle.dump(model, f)
